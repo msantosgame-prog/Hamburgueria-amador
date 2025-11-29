@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burger Kingo - Site Oficial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                cheddar: '#FF8C00', // Laranjado Cheddar
+                black: '#000000',
+                white: '#FFFFFF'
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #FFFFFF;
+        color: #000000;
+        font-family: "Times New Roman", Times, serif;
+      }
+      /* Scrollbar feia padrão */
+      ::-webkit-scrollbar {
+        width: 15px;
+        background: #ffffff;
+        border-left: 1px solid black;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #FF8C00; /* Cheddar thumb */
+        border: 1px solid black;
+      }
+      * {
+        border-radius: 0 !important; /* FORÇA TUDO A SER QUADRADO */
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
